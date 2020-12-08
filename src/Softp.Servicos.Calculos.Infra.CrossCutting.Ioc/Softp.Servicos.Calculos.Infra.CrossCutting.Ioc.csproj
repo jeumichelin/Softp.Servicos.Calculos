@@ -5,7 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softp.Servicos.Calculos.Domain\Softp.Servicos.Calculos.Domain.csproj" />
+    <ProjectReference Include="..\Softp.Servicos.Calculos.Infra.CrossCutting.ExternalServices\Softp.Servicos.Calculos.Infra.CrossCutting.ExternalServices.csproj" />
   </ItemGroup>
 
 </Project>

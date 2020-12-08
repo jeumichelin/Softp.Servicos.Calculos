@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softp.Servicos.Calculos.Domain\Softp.Servicos.Calculos.Domain.csproj" />
+    <ProjectReference Include="..\Softp.Servicos.Calculos.Infra.CrossCutting\Softp.Servicos.Calculos.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

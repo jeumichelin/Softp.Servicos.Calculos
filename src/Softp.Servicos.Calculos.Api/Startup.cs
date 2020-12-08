@@ -1,4 +1,5 @@
 using System.Reflection;
+using Ecommerce.Servicos.Produtos.Infra.CrossCutting.Ioc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,9 @@ namespace Softp.Servicos.Calculos.Api
         public void ConfigureServices(IServiceCollection services)
         {           
             services.AddControllers();
+            services.AddApiServices(Configuration);
+            services.AddMediator();
+            services.AddSettings();
             services.AddSwagger(ApiAssembly);
         }
 

@@ -10,12 +10,12 @@ namespace Softp.Servicos.Calculos.Infra.CrossCutting
 
         public TaxaJurosSettings(IConfiguration configuration)
         {
-            configuration.Bind("ApiLojas", this);
+            configuration.Bind("ApiTaxas", this);
         }
     }
 
     public class TaxaJurosSettingsRotas
     {
-        public string ObterSite { get; set; }
+        public string ObterTaxaJuros { get; set; }
     }
 }
