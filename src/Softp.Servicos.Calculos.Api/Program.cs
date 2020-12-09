@@ -14,7 +14,7 @@ namespace Softp.Servicos.Calculos.Api
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://localhost:8000").UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
