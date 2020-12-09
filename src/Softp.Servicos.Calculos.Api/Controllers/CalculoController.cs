@@ -25,5 +25,14 @@ namespace Softp.Servicos.Calculos.Api.Controllers
         {
             return await _mediator.Send(new JuroCompostoCommand(valorInicial, meses));
         }
+
+        /// <summary>
+        /// Exibe a url do repositorio no github
+        /// </summary>
+        [HttpGet("/showmethecode")]
+        public string ObterUrlFonte() 
+        {
+            return "https://github.com/jeumichelin/Softp.Servicos.Calculos";
+        }        
     }
 }
